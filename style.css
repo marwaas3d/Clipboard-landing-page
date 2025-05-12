@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --font-size:11px;
+    --text-align:center;
+    --color: hsl(228, 45%, 44%);
+    --Green-500: hsl(171, 66%, 44%);
+    --Blue-100: hsl(233, 100%, 69%);
+    --Gray-700: hsl(210, 10%, 33%);
+    --Gray-500: hsl(201, 11%, 66%);
+    --main-padding-top: 140px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+
+header{
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 108vh;
+    padding-top: var(--main-padding-top);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:375px){
+    header{
+    background-image: url('./images/bg-header-mobile.png');
+    }
+}
+@media (max-width:375px){
+    header img{
+        transform: scale(.8);
+    }
+}
+
+.head h1{
+    font-weight: 600;
+    padding-top: 30px;
+    color: var(--Gray-700);
+    font-size: 45px;
+    text-align: center;
+}
+@media (max-width:375px){
+.head h1{
+    font-size: 30px;
+}
+}
+
+.head p{
+    padding-top: 20px;
+    color: var(--Gray-500);
+    max-width: 705px;
+    font-size: 21px;
+    text-align: center;
+}
+@media (max-width:375px){
+.head p{
+    font-size: 15px;
+    width: 287px;
+    line-height: 25px;
+}
+}
+
+.btns{
+     padding-top: 30px;
+     width: 450px;
+     display: flex;
+     justify-content: space-between;   
+     flex-direction: row;
+}
+
+@media(max-width:767px){
+.btns{
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+}
+}
+
+.btns button{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+@media(max-width:767px){
+    .btns button{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}
+
+.btns button:first-of-type{
+    background-color: var(--Green-500);
+    color: white;
+    box-shadow: 0px 0px 10px 3px hsl(171deg 66% 44% / 47%);
+}
+.btns button:first-of-type:hover{
+    background-color: hsl(171deg 66% 44% / 47%);
+}
+
+.btns button:nth-of-type(2){
+    background-color: var(--Blue-100);
+    color: white;
+    box-shadow: 0px 0px 10px 3px hsl(233deg 100% 69% / 55%);
+}
+
+.btns button:nth-of-type(2):hover{
+    background-color: hsl(233deg 100% 69% / 55%);
+}
+
+/*******************************************************/
+.first-sec{
+    height:fit-content;
+    margin-top: 20px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.first-sec .head p{
+    max-width: 800px;
+    line-height: 30px;
+}
+
+
+.first-sec .content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    gap: 110px;
+}
+
+@media (max-width:1019px){
+    .first-sec .content{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.first-sec .content .right-side{
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media (max-width:767px){
+    .first-sec .content .right-side{
+    padding-top: 20px;
+    }
+}
+
+
+.first-sec .content .right-side div{
+    margin-bottom: 30px;
+}
+@media (max-width:1019px){
+    .first-sec .content .right-side div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.first-sec .content .right-side div h5{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--Gray-700);
+}
+
+.first-sec .content .right-side div p{
+    color: var(--Gray-500);
+    max-width: 350px;
+}
+@media (max-width:1019px){
+    .first-sec .content .right-side div p{
+        text-align: center;
+    }
+}
+
+/******************************************************************/
+.second-sec{
+    height: fit-content;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-sec img{
+    margin-top: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width:895px){
+    .second-sec img{
+        width: 100%;
+        margin-top: 61px;
+    }
+}
+
+/******************************************************************/
+.third-sec{
+    height: fit-content;
+    margin-top: 52px;
+    margin-bottom: 20px
+}
+
+.third-sec .content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 159px;
+    padding-right: 159px;
+}
+@media (max-width:1019px){
+    .third-sec .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+@media (max-width:331px){
+    .third-sec .content{
+    padding-left: 10px;
+    padding-right: 19px;
+    }
+}
+
+.third-sec .content div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+@media(max-width:971px){
+.third-sec .content div{
+    min-width: 416px;
+    max-width: unset;
+}
+}
+.third-sec .content div img{
+    margin-bottom: 20px;
+}
+.third-sec .content div h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--Gray-700);
+}
+.third-sec .content div p{
+    color: var(--Gray-500);
+    max-width: 350px;
+}
+
+@media(max-width:971px){
+.third-sec .content div p{
+    color: var(--Gray-500);
+    max-width: 319px;   
+    }
+}
+
+/******************************************************************/
+.fourth-sec{
+    margin-top: 117px;
+    margin-bottom: 130px;
+    height: fit-content;
+    padding-left: 180px;
+    padding-right: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:1236px){
+    .fourth-sec{
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+}
+@media (max-width: 1019px) {
+    .fourth-sec {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media (max-width:331px){
+    .fourth-sec{
+    padding-left: 10px;
+    padding-right: 19px;
+    }
+}
+
+.fourth-sec img{
+    object-fit: cover;
+}
+
+
+
+
+
+::selection{
+    background-color: var(--Green-500);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background-color: var(--Green-500);
+}
+
+/******************************************************************/
+.fifth-sec{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 200px;
+}
+
+/******************************************************************/
+footer{
+    height: fit-content;
+    background-color: #b5b5b52b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: row;
+}
+@media(max-width:920px){
+    footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+}
+@media(max-width:764px){
+    footer{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+}
+@media(max-width:691px){
+    footer{
+        flex-direction: column;
+    }
+}
+@media(max-width:691px){
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content div{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:586px){
+    footer{
+    flex-direction: column;
+    }
+}
+
+footer .content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(max-width:586px){
+    footer .content{
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    }
+@media(max-width:1820px){
+    footer .content{
+    width: 80%;
+    }
+}
+
+} 
+
+
+footer .content img{
+    transform: scale(.8);
+}
+
+footer .content  div p:first-of-type{
+        margin-bottom: 20px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
