@@ -263,7 +263,7 @@ header{
 }
 @media(max-width:971px){
 .third-sec .content div{
-    min-width: 416px;
+    min-width: 400px;
     max-width: unset;
 }
 }
